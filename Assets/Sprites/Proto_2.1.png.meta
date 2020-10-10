@@ -1,0 +1,685 @@
+fileFormatVersion: 2
+guid: a864c312bb1ec41ebb2738eff612bb01
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1098766300563772056
+    second: Proto_2.1_SheepButton
+  - first:
+      213: 7950918403523368291
+    second: Proto_2.1_ShopButton
+  - first:
+      213: -8497183535556231460
+    second: Proto_2.1_RankButton
+  - first:
+      213: 7684035409183829177
+    second: Proto_2.1_SetButton
+  - first:
+      213: -842806539141739076
+    second: Proto_2.1_KorButton
+  - first:
+      213: 3840929159624213255
+    second: Proto_2.1_EngButton
+  - first:
+      213: 6537533815117579524
+    second: Proto_2.1_6
+  - first:
+      213: -2479183188163364754
+    second: Proto_2.1_7
+  - first:
+      213: -3902835325084175437
+    second: Proto_2.1_8
+  - first:
+      213: 1557561521617236883
+    second: Proto_2.1_9
+  - first:
+      213: -1947752793886132635
+    second: Proto_2.1_10
+  - first:
+      213: -6026735451574774192
+    second: Proto_2.1_11
+  - first:
+      213: -2828704498096730735
+    second: Proto_2.1_12
+  - first:
+      213: -5997306179914155513
+    second: Proto_2.1_BgmButton
+  - first:
+      213: 244596881298301881
+    second: Proto_2.1_SettingButton
+  - first:
+      213: 4266603206513501638
+    second: Proto_2.1_SoundFxButton
+  - first:
+      213: 4228441896661401143
+    second: Proto_2.1_SensitivityButton
+  - first:
+      213: -1125230694373564935
+    second: Proto_2.1_SliderKnob
+  - first:
+      213: 718313167003244930
+    second: Proto_2.1_SliderBorder
+  - first:
+      213: -2909995890049224942
+    second: Proto_2.1_19
+  - first:
+      213: -6669459468342256170
+    second: Proto_2.1_WhiteSquare
+  - first:
+      213: 8271744707894237365
+    second: Proto_2.1_SliderBackground
+  - first:
+      213: 8487924592885745102
+    second: Proto_2.1_CreditButton
+  - first:
+      213: -2392964155045458713
+    second: Proto_2.1_Check
+  - first:
+      213: 1264301044038669674
+    second: Proto_2.1_SliderFill
+  - first:
+      213: 9066735908175021363
+    second: Proto_2.1_RankingButton
+  - first:
+      213: 6700547318686715897
+    second: Proto_2.1_AskButton
+  - first:
+      213: -4861916007806391179
+    second: Proto_2.1_BigSquare
+  - first:
+      213: -1029175858871037486
+    second: Proto_2.1_ExitButton
+  - first:
+      213: -989712761589644368
+    second: Proto_2.1_29
+  - first:
+      213: 5083331942436699659
+    second: Proto_2.1_30
+  - first:
+      213: -3927952356668968548
+    second: Proto_2.1_31
+  - first:
+      213: -1960092458837212213
+    second: Proto_2.1_32
+  - first:
+      213: -6059167231260444796
+    second: Proto_2.1_33
+  - first:
+      213: -6981333139829045599
+    second: Proto_2.1_6
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Proto_2.1_SheepButton
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 1212
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 892164cf02a9f3f00800000000000000
+      internalID: 1098766300563772056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Proto_2.1_ShopButton
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 1209
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36550288926575e60800000000000000
+      internalID: 7950918403523368291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Proto_2.1_RankButton
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 1208
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cde7fdb2890f31a80800000000000000
+      internalID: -8497183535556231460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Proto_2.1_SetButton
+      rect:
+        serializedVersion: 2
+        x: 549
+        y: 1212
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bceced2e7d23aa60800000000000000
+      internalID: 7684035409183829177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Proto_2.1_KorButton
+      rect:
+        serializedVersion: 2
+        x: 730
+        y: 1209
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbd84140befbd44f0800000000000000
+      internalID: -842806539141739076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Proto_2.1_EngButton
+      rect:
+        serializedVersion: 2
+        x: 906
+        y: 1206
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70347d678b8bd4530800000000000000
+      internalID: 3840929159624213255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Proto_2.1_BgmButton
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 1129
+        width: 510
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70a36f0fdc945cca0800000000000000
+      internalID: -5997306179914155513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Proto_2.1_SettingButton
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 1089
+        width: 327
+        height: 98
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b324fe419bf46300800000000000000
+      internalID: 244596881298301881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Proto_2.1_SoundFxButton
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 1038
+        width: 268
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c5a7c9c205063b30800000000000000
+      internalID: 4266603206513501638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Proto_2.1_SensitivityButton
+      rect:
+        serializedVersion: 2
+        x: 676
+        y: 1036
+        width: 330
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73eb1e370817eaa30800000000000000
+      internalID: 4228441896661401143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Proto_2.1_SliderKnob
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 972
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fd5f7b25a06260f0800000000000000
+      internalID: -1125230694373564935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Proto_2.1_SliderBorder
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 943
+        width: 724
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 289d6b40506f7f900800000000000000
+      internalID: 718313167003244930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Proto_2.1_19
+      rect:
+        serializedVersion: 2
+        x: 877
+        y: 963
+        width: 45
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21fe4c3e72e9d97d0800000000000000
+      internalID: -2909995890049224942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Proto_2.1_WhiteSquare
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 851
+        width: 98
+        height: 98
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6dd189923f15173a0800000000000000
+      internalID: -6669459468342256170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Proto_2.1_SliderBackground
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 856
+        width: 718
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b8d0ca7cf32bc270800000000000000
+      internalID: 8271744707894237365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Proto_2.1_CreditButton
+      rect:
+        serializedVersion: 2
+        x: 873
+        y: 789
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec5c14f327a2bc570800000000000000
+      internalID: 8487924592885745102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Proto_2.1_Check
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 733
+        width: 89
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ecc54a87cb7aced0800000000000000
+      internalID: -2392964155045458713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Proto_2.1_SliderFill
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 771
+        width: 718
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a65941bd913bb8110800000000000000
+      internalID: 1264301044038669674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Proto_2.1_RankingButton
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 676
+        width: 456
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3350d07554483dd70800000000000000
+      internalID: 9066735908175021363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Proto_2.1_AskButton
+      rect:
+        serializedVersion: 2
+        x: 873
+        y: 604
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ff840b09402dfc50800000000000000
+      internalID: 6700547318686715897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Proto_2.1_BigSquare
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 30
+        width: 843
+        height: 620
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57c2ae28621078cb0800000000000000
+      internalID: -4861916007806391179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Proto_2.1_ExitButton
+      rect:
+        serializedVersion: 2
+        x: 898
+        y: 422
+        width: 120
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d195985202a7b1f0800000000000000
+      internalID: -1029175858871037486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
