@@ -613,3 +613,6 @@ InitTestScene*.unity
 *.code-workspace
 
 # End of https://www.toptal.com/developers/gitignore/api/macos,vs,vscode,unity,csharp
+
+package.json
+package-lock.json
