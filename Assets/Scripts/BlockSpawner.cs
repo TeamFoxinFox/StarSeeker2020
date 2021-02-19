@@ -8,9 +8,10 @@ namespace Starseeker
     {
         public GameObject blockPrefab;
         private int currentFloor = 2;
-
+        private GameObject emptyObj;
         private void Start()
         {
+            emptyObj = new GameObject("PatternObject");
             StartCoroutine(SpawnCoroutine());
         }
 
@@ -26,12 +27,9 @@ namespace Starseeker
 
         private void CreateBlock(int floor)
         {
-            int xoffSet = -4;
-            for (int i = 0; i < 9; i++)
-            {
-                GameObject obj = Instantiate(blockPrefab, transform.position + new Vector3(xoffSet + i, 0, 0), Quaternion.identity, transform);
-                obj.GetComponent<Block>().floor = floor;
-            }
+            var temp = Instantiate(emptyObj, transform.position, Quaternion.identity, transform);
+            var sp = temp.AddComponent<SimplePattern>();
+            sp.Initialize(5);
         }
     }
 }
