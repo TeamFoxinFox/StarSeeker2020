@@ -17,12 +17,13 @@ namespace Starseeker
     public class SimplePattern : MonoBehaviour, IPattern
     {
         public int Health { get; }
-        public List<Block> Blocks { get; }
+        public List<Block> Blocks { get; protected set; }
         public GameObject DefaultBlockPrefab;
 
         public void Awake()
         {
             var prefab = Resources.Load("Prefabs/Block") as GameObject;
+            Blocks = new List<Block>();
             DefaultBlockPrefab = prefab;
         }
 
