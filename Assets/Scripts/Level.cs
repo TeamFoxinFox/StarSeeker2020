@@ -14,7 +14,7 @@ namespace Starseeker
         public LevelTable()
         {
             PatternTable = new List<Table>();
-            var level1 = new List<(int, IPattern)> {
+            var level1 = new Table {
                 (100, new SimplePattern())
             };
             PatternTable.Add(level1);

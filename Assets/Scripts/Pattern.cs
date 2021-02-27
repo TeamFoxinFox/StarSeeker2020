@@ -18,6 +18,7 @@ namespace Starseeker
     {
         public int Health { get; }
         public List<Block> Blocks { get; protected set; }
+        [HideInInspector]
         public GameObject DefaultBlockPrefab;
 
         public void Awake()
