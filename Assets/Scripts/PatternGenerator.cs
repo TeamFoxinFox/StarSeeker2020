@@ -5,19 +5,18 @@ using UnityEngine;
 
 namespace Starseeker
 {
+    [RequireComponent(typeof(LevelTable))]
     public class PatternGenerator : MonoBehaviour
     {
-        public LevelTable LevelTable;
+        public GameObject LvTblPrefab;
         public uint generatedCount = 0;
         public int level = 0;
 
-        private Queue<IPattern> queue;
+        private Queue<IPattern> queue = new Queue<IPattern>();
         private GameObject emptyObj;
 
         private void Start()
         {
-            LevelTable = new LevelTable();
-            queue = new Queue<IPattern>();
             emptyObj = new GameObject("PatternObject");
 
             StartCoroutine(SpawnCoroutine());
@@ -38,17 +37,17 @@ namespace Starseeker
             {
                 var r = new System.Random();
                 var n = r.Next(0, 100);
-                var table = LevelTable.CurrentTable(level);
-                foreach (var p_chance in table)
+                var table = GetComponent<LevelTable>().CurrentTable(level);
+                foreach (var p_chance in table.table)
                 {
-                    if (n < p_chance.Item1)
+                    if (n < p_chance.Percent)
                     {
                         var temp = Instantiate(emptyObj, transform.position, Quaternion.identity, transform);
-                        var p = temp.AddComponent(p_chance.Item2.GetType()) as IPattern;
+                        var p = temp.AddComponent(p_chance.Pattern.Type) as IPattern;
                         queue.Enqueue(p);
                         break;
                     }
-                    n -= p_chance.Item1;
+                    n -= p_chance.Percent;
                 }
             }
 

@@ -8,25 +8,35 @@ namespace Starseeker
     public interface IPattern
     {
         int Health { get; }
-        List<Block> Blocks { get; }
+        List<GameObject> Blocks { get; }
 
         void Initialize(int Health);
         bool IsDestoryedAll();
     }
 
+    [Serializable]
     public class SimplePattern : MonoBehaviour, IPattern
     {
         public int Health { get; }
-        public List<Block> Blocks { get; protected set; }
+        public List<GameObject> Blocks { get; protected set; }
         [HideInInspector]
         public GameObject DefaultBlockPrefab;
 
         public void Awake()
         {
             var prefab = Resources.Load("Prefabs/Block") as GameObject;
-            Blocks = new List<Block>();
+            Blocks = new List<GameObject>();
             DefaultBlockPrefab = prefab;
         }
+
+        public void OnDestroy()
+        {
+            foreach (var block in Blocks)
+            {
+                Destroy(block);
+            }
+        }
+
 
         public void Initialize(int Health)
         {
@@ -40,7 +50,8 @@ namespace Starseeker
 
                 var block = obj.GetComponent<Block>();
                 block.Health = Health;
-                Blocks.Add(block);
+                block.Parent = this;
+                Blocks.Add(obj);
             }
         }
 

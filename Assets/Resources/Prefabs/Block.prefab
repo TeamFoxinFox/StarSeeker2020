@@ -47,6 +47,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -71,6 +72,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!102 &1245640881173546043
 TextMesh:
   serializedVersion: 3
@@ -103,7 +105,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1245640882750637990}
   - component: {fileID: 1245640882750637985}
-  - component: {fileID: 1245640882750637991}
+  - component: {fileID: 4427489440381752179}
   - component: {fileID: 6187889779457686577}
   - component: {fileID: -6816007393541412575}
   m_Layer: 0
@@ -143,6 +145,7 @@ SpriteRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -178,7 +181,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1245640882750637991
+--- !u!114 &4427489440381752179
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -187,11 +190,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1245640882750637984}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4730e11b9c958f5478964a116420d7c3, type: 3}
+  m_Script: {fileID: 11500000, guid: ca18b2e9f248841b29a608b9387b6b7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 5
+  maxHealth: 1
   floor: 0
+  Score: 1
+  springPower: {x: 0, y: 12, z: 0}
 --- !u!61 &6187889779457686577
 BoxCollider2D:
   m_ObjectHideFlags: 0

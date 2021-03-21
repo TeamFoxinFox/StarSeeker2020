@@ -934,6 +934,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1252571847}
   - component: {fileID: 1252571846}
+  - component: {fileID: 1252571848}
   m_Layer: 0
   m_Name: PatternGenerator
   m_TagString: Untagged
@@ -953,6 +954,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c81c9442aecf4a24b12c00303511d6a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  LvTblPrefab: {fileID: 0}
   generatedCount: 0
   level: 0
 --- !u!4 &1252571847
@@ -969,6 +971,30 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1252571848
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1252571845}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6948f993045de457fbacd15db747279d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Levels:
+  - table:
+    - percent: 100
+      pattern:
+        id: 0
+    - percent: 100
+      pattern:
+        id: 0
+  references:
+    version: 1
+    00000000:
+      type: {class: , ns: , asm: }
 --- !u!1 &1660496961
 GameObject:
   m_ObjectHideFlags: 0
