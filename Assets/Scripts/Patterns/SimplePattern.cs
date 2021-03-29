@@ -5,22 +5,18 @@ using UnityEngine;
 
 namespace Starseeker
 {
-
     [Serializable]
-    public class OneinPattern : MonoBehaviour, IPattern
+    public class SimplePattern : MonoBehaviour, IPattern
     {
         public int Health { get; }
         public List<GameObject> Blocks { get; protected set; }
         public GameObject DefaultBlockPrefab;
-        public GameObject SpecialBlockPrefab;
 
         public void Awake()
         {
-            var prefab1 = Resources.Load("Prefabs/Block") as GameObject;
-            var prefab2 = Resources.Load("Prefabs/LineBreakBlock") as GameObject;
+            var prefab = Resources.Load("Prefabs/Block") as GameObject;
             Blocks = new List<GameObject>();
-            DefaultBlockPrefab = prefab1;
-            SpecialBlockPrefab = prefab2;
+            DefaultBlockPrefab = prefab;
         }
 
         public void OnDestroy()
@@ -33,12 +29,10 @@ namespace Starseeker
 
         public void Initialize(int Health)
         {
-            var n = new System.Random().Next(0, 8);
-
             for (int xoffSet = -4, i = 0; i < 9; i++)
             {
                 GameObject obj = Instantiate(
-                    i == n ? SpecialBlockPrefab : DefaultBlockPrefab,
+                    DefaultBlockPrefab,
                     transform.position + new Vector3(xoffSet + i, 0, 0),
                     Quaternion.identity,
                     transform);
