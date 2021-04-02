@@ -5,11 +5,21 @@ using UnityEngine;
 
 namespace Starseeker
 {
-    public interface IPattern
+    public abstract class IPattern : MonoBehaviour
     {
-        int Health { get; }
-        List<GameObject> Blocks { get; }
+        public int Health { get; }
+        public List<GameObject> Blocks { get; protected set; }
 
-        void Initialize(int Health);
+        public abstract void Initialize(int Health);
+
+        private bool IsPierced = false;
+        public void Powerup()
+        {
+            if (!IsPierced)
+            {
+                Player.Instance.Power++;
+                IsPierced = true;
+            }
+        }
     }
 }

@@ -6,10 +6,8 @@ using UnityEngine;
 namespace Starseeker
 {
     [Serializable]
-    public class SimplePattern : MonoBehaviour, IPattern
+    public class SimplePattern : IPattern
     {
-        public int Health { get; }
-        public List<GameObject> Blocks { get; protected set; }
         public GameObject DefaultBlock;
 
         public void Awake()
@@ -25,7 +23,7 @@ namespace Starseeker
             }
         }
 
-        virtual public void Initialize(int Health)
+        public override void Initialize(int Health)
         {
             for (int xoffSet = -4, i = 0; i < 9; i++)
             {

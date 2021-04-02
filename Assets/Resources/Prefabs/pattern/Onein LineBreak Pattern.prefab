@@ -43,5 +43,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 266992fb82b904bccaa41eca34b4c171, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DefaultBlockPrefab: {fileID: 1245640882750637984, guid: c1c2d339715644fa3af3be676103bbb5, type: 3}
-  SpecialBlockPrefab: {fileID: 4523104410619417361, guid: d580bb2c69155475fabad54daf12504c, type: 3}
+  DefaultBlock: {fileID: 1245640882750637984, guid: c1c2d339715644fa3af3be676103bbb5, type: 3}
+  SpecialBlock: {fileID: 4523104410619417361, guid: d580bb2c69155475fabad54daf12504c, type: 3}
