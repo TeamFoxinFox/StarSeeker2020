@@ -42,8 +42,12 @@ namespace Starseeker
                 {
                     if (n < p_chance.Percent)
                     {
-                        var temp = Instantiate(emptyObj, transform.position, Quaternion.identity, transform);
-                        var p = temp.AddComponent(p_chance.Pattern.Type) as IPattern;
+                        var temp = Instantiate(p_chance.Pattern, transform.position, Quaternion.identity, transform);
+                        // var p = temp.AddComponent(p_chance.Pattern.Type) as IPattern;
+                        var p = temp.GetComponent<IPattern>();
+                        if (p == null)
+                            throw new InvalidCastException("Cannot read pattern from table");
+
                         queue.Enqueue(p);
                         break;
                     }

@@ -836,8 +836,8 @@ MonoBehaviour:
     - Percent: 100
       Pattern:
         GuidAssignmentFailed: 0
-        GUID: 
-        TypeNameAndAssembly: Starseeker.SimplePattern, Assembly-CSharp
+        GUID: 266992fb82b904bccaa41eca34b4c171
+        TypeNameAndAssembly: Starseeker.OneinPattern, Assembly-CSharp
         _suppressLogs: 0
 --- !u!114 &595345245
 MonoBehaviour:

@@ -5,59 +5,21 @@ using UnityEngine;
 
 namespace Starseeker
 {
-    public interface IPattern
-    {
-        int Health { get; }
-        List<GameObject> Blocks { get; }
-
-        void Initialize(int Health);
-        bool IsDestoryedAll();
-    }
-
-    [Serializable]
-    public class SimplePattern : MonoBehaviour, IPattern
+    public abstract class IPattern : MonoBehaviour
     {
         public int Health { get; }
         public List<GameObject> Blocks { get; protected set; }
-        [HideInInspector]
-        public GameObject DefaultBlockPrefab;
 
-        public void Awake()
-        {
-            var prefab = Resources.Load("Prefabs/Block") as GameObject;
-            Blocks = new List<GameObject>();
-            DefaultBlockPrefab = prefab;
-        }
+        public abstract void Initialize(int Health);
 
-        public void OnDestroy()
+        private bool IsPierced = false;
+        public void Powerup()
         {
-            foreach (var block in Blocks)
+            if (!IsPierced)
             {
-                Destroy(block);
+                Player.Instance.status.power++;
+                IsPierced = true;
             }
-        }
-
-
-        public void Initialize(int Health)
-        {
-            for (int xoffSet = -4, i = 0; i < 9; i++)
-            {
-                GameObject obj = Instantiate(
-                    DefaultBlockPrefab,
-                    transform.position + new Vector3(xoffSet + i, 0, 0),
-                    Quaternion.identity,
-                    transform);
-
-                var block = obj.GetComponent<Block>();
-                block.Health = Health;
-                block.Parent = this;
-                Blocks.Add(obj);
-            }
-        }
-
-        public bool IsDestoryedAll()
-        {
-            throw new NotImplementedException();
         }
     }
 }

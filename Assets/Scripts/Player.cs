@@ -7,8 +7,15 @@ namespace Starseeker
     public class Player : MonoBehaviour
     {
         public static Player Instance { get; private set; } = null;
-        public int Power { get; set; } = 1;
-        private float speed = 2;
+
+        public class Status
+        {
+            public int power = 1;
+            public Vector2 speed = new Vector2(2f, 14f);
+
+        }
+        public Status status = new Status();
+
         private float collisionCooltimeMax = 0.5f;
         private float collisionCooltime;
         private Rigidbody2D rigidbody2d;
@@ -26,13 +33,10 @@ namespace Starseeker
         {
             collisionCooltime = Mathf.Min(0, collisionCooltime - Time.deltaTime);
 
-            if (Input.GetKey(KeyCode.LeftArrow))
+            float hMoved = Input.GetAxis("Horizontal");
+            if (hMoved != 0)
             {
-                transform.Translate(Vector3.left * speed * Time.deltaTime);
-            }
-            else if (Input.GetKey(KeyCode.RightArrow))
-            {
-                transform.Translate(Vector3.right * speed * Time.deltaTime);
+                transform.Translate((hMoved < 0 ? Vector3.left : Vector3.right) * status.speed.x * Time.deltaTime);
             }
         }
 
@@ -41,7 +45,7 @@ namespace Starseeker
             if (collision.gameObject.CompareTag("Block") && collisionCooltime != 0)
             {
                 var block = collision.gameObject.GetComponent<Block>();
-                rigidbody2d.velocity = block.springPower;
+                rigidbody2d.velocity = new Vector3(0, block.springPower * status.speed.y, 0);
                 collisionCooltime = collisionCooltimeMax;
             }
         }

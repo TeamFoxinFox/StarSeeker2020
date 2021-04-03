@@ -17,8 +17,7 @@ namespace Starseeker
             public struct Chance
             {
                 public int Percent;
-                [Inherits(typeof(IPattern))]
-                public TypeReference Pattern;
+                public GameObject Pattern;
             }
             public List<Chance> table = new List<Chance>();
         }

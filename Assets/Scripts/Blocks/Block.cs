@@ -17,10 +17,12 @@ namespace Starseeker
             set
             {
                 health = Mathf.Max(value, 0);
-                textMesh.text = value.ToString();
+                if (textMesh)
+                    textMesh.text = value.ToString();
                 if (health <= 0)
                 {
                     Destroy(gameObject);
+                    Parent.Powerup();
                 }
             }
         }
@@ -28,23 +30,24 @@ namespace Starseeker
 
         public IPattern Parent;
 
-        public Vector3 springPower = new Vector3(0, 12, 0);
+        public float springPower = 1;
 
         protected SpriteRenderer spriteRenderer;
         protected BoxCollider2D boxCollider2d;
-        protected TextMesh textMesh;
+        protected TextMesh? textMesh = null;
 
         protected void Awake()
         {
             spriteRenderer = GetComponent<SpriteRenderer>();
             boxCollider2d = GetComponent<BoxCollider2D>();
-            textMesh = transform.GetChild(0).GetComponent<TextMesh>();
+            // TODO: blocks child can expandible
+            if (transform.childCount != 0)
+                textMesh = transform.GetChild(0).GetComponent<TextMesh>();
         }
 
         public void OnDestroy()
         {
             GameManager.Instance.Score += Score;
-            Player.Instance.Power = Mathf.Max(Player.Instance.Power, floor);
         }
 
         protected void Start()
@@ -61,7 +64,7 @@ namespace Starseeker
         {
             if (IsPlayerCollisioned(collision))
             {
-                Health -= Player.Instance.Power;
+                Health -= Player.Instance.status.power;
             }
         }
         protected bool IsPlayerCollisioned(Collision2D collision)
