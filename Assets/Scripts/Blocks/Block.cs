@@ -1,5 +1,4 @@
-﻿
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -10,7 +9,8 @@ namespace Starseeker
         public int maxHealth;
         [HideInInspector]
         public int floor;
-        private int health;
+        public int Score = 1;
+        protected int health;
         public int Health
         {
             get { return health; }
@@ -21,39 +21,52 @@ namespace Starseeker
                 if (health <= 0)
                 {
                     Destroy(gameObject);
-                    GameManager.Instance.Score++;
-                    Player.Instance.Power = Mathf.Max(Player.Instance.Power, floor);
                 }
             }
         }
-        private float speed = 0.8f;
-        private SpriteRenderer spriteRenderer;
-        private BoxCollider2D boxCollider2d;
-        private TextMesh textMesh;
+        protected float speed = 0.8f;
 
-        private void Awake()
+        public IPattern Parent;
+
+        public Vector3 springPower = new Vector3(0, 12, 0);
+
+        protected SpriteRenderer spriteRenderer;
+        protected BoxCollider2D boxCollider2d;
+        protected TextMesh textMesh;
+
+        protected void Awake()
         {
             spriteRenderer = GetComponent<SpriteRenderer>();
             boxCollider2d = GetComponent<BoxCollider2D>();
             textMesh = transform.GetChild(0).GetComponent<TextMesh>();
         }
 
-        private void Start()
+        public void OnDestroy()
+        {
+            GameManager.Instance.Score += Score;
+            Player.Instance.Power = Mathf.Max(Player.Instance.Power, floor);
+        }
+
+        protected void Start()
         {
             Health = maxHealth;
         }
 
-        private void Update()
+        protected void Update()
         {
             transform.Translate(Vector3.up * speed * Time.deltaTime);
         }
-        
-        private void OnCollisionEnter2D(Collision2D collision)
+
+        virtual protected void OnCollisionEnter2D(Collision2D collision)
         {
-            if (collision.gameObject.CompareTag("Player"))
+            if (IsPlayerCollisioned(collision))
             {
                 Health -= Player.Instance.Power;
             }
+        }
+        protected bool IsPlayerCollisioned(Collision2D collision)
+        {
+            return collision.gameObject.CompareTag("Player");
         }
     }
 }

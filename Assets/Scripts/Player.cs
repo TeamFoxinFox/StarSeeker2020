@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Starseeker {
+namespace Starseeker
+{
     public class Player : MonoBehaviour
     {
         public static Player Instance { get; private set; } = null;
@@ -24,7 +25,7 @@ namespace Starseeker {
         private void Update()
         {
             collisionCooltime = Mathf.Min(0, collisionCooltime - Time.deltaTime);
-            
+
             if (Input.GetKey(KeyCode.LeftArrow))
             {
                 transform.Translate(Vector3.left * speed * Time.deltaTime);
@@ -37,9 +38,10 @@ namespace Starseeker {
 
         private void OnCollisionEnter2D(Collision2D collision)
         {
-            if (collisionCooltime != 0)
+            if (collision.gameObject.CompareTag("Block") && collisionCooltime != 0)
             {
-                rigidbody2d.velocity = new Vector3(0, 12, 0);
+                var block = collision.gameObject.GetComponent<Block>();
+                rigidbody2d.velocity = block.springPower;
                 collisionCooltime = collisionCooltimeMax;
             }
         }
