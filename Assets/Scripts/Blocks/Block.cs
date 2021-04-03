@@ -30,7 +30,7 @@ namespace Starseeker
 
         public IPattern Parent;
 
-        public Vector3 springPower = new Vector3(0, 12, 0);
+        public float springPower = 1;
 
         protected SpriteRenderer spriteRenderer;
         protected BoxCollider2D boxCollider2d;
@@ -64,7 +64,7 @@ namespace Starseeker
         {
             if (IsPlayerCollisioned(collision))
             {
-                Health -= Player.Instance.Power;
+                Health -= Player.Instance.status.power;
             }
         }
         protected bool IsPlayerCollisioned(Collision2D collision)

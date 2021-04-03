@@ -17,7 +17,7 @@ namespace Starseeker
         {
             if (!IsPierced)
             {
-                Player.Instance.Power++;
+                Player.Instance.status.power++;
                 IsPierced = true;
             }
         }
